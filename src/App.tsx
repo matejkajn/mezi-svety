@@ -28,7 +28,12 @@ const profiles = [
 ];
 
 const projects = [
-  { image: "z_nas.png", name: "Z nás 2025", description: "akryl na plátně, 228 x 200", author: "Mikuláš Karban" },
+  {
+    image: "z_nas.png",
+    name: "Z nás 2025",
+    description: "akryl na plátně, 228 x 200",
+    author: "Mikuláš Karban",
+  },
   {
     image: "kde_se_to_bere.png",
     name: "Kde se to bere 2025",
@@ -109,8 +114,8 @@ function App() {
 
           <div>Online katalog výstavy</div>
           <div className="font-semibold py-6">
-            “Dva mladí výtvarníci. Dvě cesty obrazem. Jedna výstava o tom, co se odehrává mezi vnitřním a vnějším
-            světem.”
+            “Dva mladí výtvarníci. Dvě cesty obrazem. Jedna výstava o tom, co se
+            odehrává mezi vnitřním a vnějším světem.”
           </div>
         </div>
       </header>
@@ -125,11 +130,16 @@ function App() {
         <hr className="my-4 h-[0.5px] bg-black" />
       </main>
       <footer className="w-[85%] m-auto">
-        <div className="italic py-4">*Rozměry děl jsou uvedeny v centimetrech.</div>
         <div className="italic py-4">
-          V případě zájmu o koupi obrazu kontaktujte Alexandrux nebo Mikuláše (kontakty výše).
+          *Rozměry děl jsou uvedeny v centimetrech.
         </div>
-        <div className="text-center text-sm text-gray pt-8 pb-6">© Kateřina Hršelová, Jonáš Matějka</div>
+        <div className="italic py-4">
+          V případě zájmu o koupi obrazu kontaktujte Alexandru nebo Mikuláše
+          (kontakty výše).
+        </div>
+        <div className="text-center text-sm text-gray pt-8 pb-6">
+          © Kateřina Hršelová, Jonáš Matějka
+        </div>
       </footer>
     </>
   );
