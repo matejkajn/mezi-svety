@@ -6,7 +6,16 @@ type Props = {
   content: string;
 };
 
+const NBSP_PREFIXES = ["k", "s", "v", "z", "u", "o", "a", "i"];
+
+const fixPrepositions = (text: string) => {
+  // Nahraď jednoznakové předložky zalomením řádku
+  const pattern = new RegExp(`\\b(${NBSP_PREFIXES.join("|")})\\s+`, "gi");
+  return text.replace(pattern, "$1\n");
+};
+
 const ProfileCard = ({ image, name, description, phone, content }: Props) => {
+  description = fixPrepositions(description);
   return (
     <div className="flex items-center gap-4 p-4">
       <div className="no-flex">
@@ -18,7 +27,11 @@ const ProfileCard = ({ image, name, description, phone, content }: Props) => {
           />
           <div className="no-flex px-4">
             <div className="font-bold font-times">{name}</div>
-            {description && <div className="text-sm">{description}</div>}
+            {description && (
+              <div className="text-sm" style={{ whiteSpace: "pre-line" }}>
+                {description}
+              </div>
+            )}
             <a className="text-sm" href={`tel:${phone}`}>
               {phone}
             </a>
