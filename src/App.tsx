@@ -30,8 +30,8 @@ function App() {
           >
             {language}
           </button>
-          <h1 className="font-extrabold text-6xl pt-8 pb-2 uppercase">
-            <div>{t("header.title1")}</div>
+          <h1 className="font-extrabold text-6xl pt-10 pb-2 uppercase mt-6">
+            <div className="pb-1">{t("header.title1")}</div>
             <div>{t("header.title2")}</div>
           </h1>
 
