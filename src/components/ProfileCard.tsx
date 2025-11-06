@@ -21,7 +21,7 @@ const ProfileCard = ({ image, name, description, phone, content }: Props) => {
         <div className="items-center flex">
           <img
             className="w-[108px] h-[108px] rounded-full"
-            src={`/assets/profiles/${image}`}
+            src={`/public/assets/profiles/${image}`}
             alt=""
           />
           <div className="no-flex px-4">
