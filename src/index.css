@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Archivo";
-  src: url("assets/fonts/Archivo-VariableFont_wdth,wght.ttf");
+  src: url("/fonts/Archivo-VariableFont_wdth,wght.ttf");
 }
 
 @import "tailwindcss";
