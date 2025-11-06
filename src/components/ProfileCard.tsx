@@ -9,7 +9,6 @@ type Props = {
 const NBSP_PREFIXES = ["k", "s", "v", "z", "u", "o", "a", "i"];
 
 const fixPrepositions = (text: string) => {
-  // Nahraď jednoznakové předložky zalomením řádku
   const pattern = new RegExp(`\\b(${NBSP_PREFIXES.join("|")})\\s+`, "gi");
   return text.replace(pattern, "$1\n");
 };
