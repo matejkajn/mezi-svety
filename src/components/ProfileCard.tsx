@@ -25,7 +25,7 @@ const ProfileCard = ({ image, name, description, phone, content }: Props) => {
             alt=""
           />
           <div className="no-flex px-4">
-            <div className="font-bold font-times">{name}</div>
+            <div className="font-semibold font-times">{name}</div>
             {description && (
               <div className="text-sm" style={{ whiteSpace: "pre-line" }}>
                 {description}
